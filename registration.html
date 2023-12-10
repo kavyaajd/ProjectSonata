@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration Page</title>
+</head>
+<body>
+
+    <div id="regbox">
+        <form id="registrationpage" action="registration.html" method="post">
+            <h1>Registration</h1>
+
+            <input type="text" name="fname" class="input" placeholder="First Name" />
+            <br>
+            <input type="text" name="lname" class="input" placeholder="Last Name" required/>
+            <br>
+            <input type="text" name="email" class="input" placeholder="Email" required/>
+            <br>
+            <input type="password" name="password" class="input" placeholder="Password" required/>
+            <br>
+            <input type="password" name="cpassword" class="input" placeholder="Re-enter Password" required/>
+            <br>
+            <input type="submit" name="signup" class="Registrationbutton" value="Submit" />
+        </form>
+
+        <!-- Display messages or alerts if needed -->
+        <a href="login.html">Back to Login</a>
+        <br>
+        <label id="msg">Only for Staff</label>
+    </div>
+
+</body>
+</html>

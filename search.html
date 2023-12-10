@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #searchbox {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #spage {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .searchinput {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .searchbutton, .deletebutton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .deletebutton {
+            background-color: #f44336;
+        }
+
+        #results {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="searchbox">
+        <form id="spage" action="search.html" method="post">
+            <h1>Search</h1>
+
+            <input name="name" type="text" class="searchinput" autocomplete="off" placeholder="Name" />
+            <br>
+            <input name="phone" type="text" class="searchinput" autocomplete="off" placeholder="Phone Number" />
+            <br>
+            <input name="search" type="submit" class="searchbutton" value="Search" />
+            <input type="submit" name="delete" class="deletebutton" value="Delete">
+        </form>
+    </div>
+    <div id="results">
+        <!-- Results will be displayed here if any -->
+    </div>
+</body>
+
+</html>

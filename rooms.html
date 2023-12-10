@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        center {
+            display: block;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .room {
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #roomimg {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            
+        }
+
+        #rdiscrp {
+            text-align: justify;
+        }
+
+        #msg {
+            font-weight: bold;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Rooms</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Rooms</h1>
+    </center>
+
+    <div class="room">
+        <img id="roomimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptiwuqaHQhvQYvxFQw8vIaVHMH4CkA5gFXARb5jCeQA&s">
+        <h2><center>Single</center></h2>
+        <div id="rdiscrp">
+            <p>
+                Single rooms are equipped with basic amenities. Our standard rooms are equipped with luxury furniture, functional amenities and works of art.
+                Small independent room, closet, private bathroom, hot water, heater, flat TV, cable subscription, 20MB WiFi.
+            </p>
+            <br><label id="msg">Price: Rs2000 </label><a href="booking.html">Book Now</a>
+        </div>
+    </div>
+
+    <div class="room">
+        <img id="roomimg" width="480" height="320" src="https://www.ajulresort.com/uploads/images/600/402_R9545.jpg?v=202306051830" >
+        <h2><center>Double</center></h2>
+        <div id="rdiscrp">
+            <p>
+                These double rooms feature an open-plan kitchenette, spacious work desk and chair, seating area and private bathroom in one room.
+                All rooms are non-smoking. Unlimited, complimentary hi-speed wi-fi and internet access, Electronic key card system,24 hour reception, 24 hour room service,
+                Bottled mineral water, Air conditioning, King sized bed,En-suite bathroom. All rooms and apartments vary with décor, views, furnishings and layout.
+            </p>
+            <br><label id="msg">Price: Rs3000 </label><a href="booking.html">Book Now</a>
+        </div>
+    </div>
+
+    <div class="room">
+        <img id="roomimg" width="480" height="320" src="https://images.mirai.com/INFOROOMS/100161192/OmJm9Bt2VVEZqVfd7qtf/OmJm9Bt2VVEZqVfd7qtf_original.jpg" >
+        <h2><center>Deluxe</center></h2>
+        <div id="rdiscrp">
+            <p>
+                Experience luxury and spacious living with spectacular views.The hotel’s light, airy, and tranquil deluxe rooms
+                combine contemporary sophistication and comfort with spaciousness.
+                Our Hotel boasts the latest in Wi-Fi technology, offering the fastest hotel speeds available in the country.
+                In-room spa service,Iron and ironing board,Laundry and dry cleaning facilities (charges apply), Evening turndown service, bathrobes and slippers,
+                Wake-up call service.
+            </p>
+            <br><label id="msg">Price: Rs4000 </label><a href="booking.html">Book Now</a>
+        </div>
+    </div>
+
+    <div class="room">
+        <img id="roomimg" width="480" height="320" src="data:image/jpeg;base64,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" >
+        <h2><center>Presidential Suite</center></h2>
+        <div id="rdiscrp">
+            <p>
+                The Presidential Suite is tiled in flawless, white Thassos marble, defined by classic white columns and ornamented with a black piano and a life size bronze statue.
+                In the dining room, a brass telescope looks out over the ocean. The Presidential Suite includes a master bedroom and a living space, a separate living room and a dining room with ocean views,
+                a work space, a powder room, a pantry and a separate entrance for the private butler.
+            </p>
+            <br><label id="msg">Price: Rs5000 </label><a href="booking.html">Book Now</a>
+        </div>
+    </div>
+</body>
+</html>

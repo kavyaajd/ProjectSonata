@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADISE ROYALE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://media.istockphoto.com/id/519691168/photo/water-villas-in-hotel-resort-maldives.webp?b=1&s=170667a&w=0&k=20&c=NcLARf2w2fb0p8mY2z5r3Ejl_kKWMBDWwuI_7C7N7KQ=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .home {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+        }
+
+        .star {
+            display: none;
+        }
+
+        .starlabel {
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+        }
+
+        .starinput {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .starbutton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        article {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        #booknow a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Booking</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="home">
+        <div class="stars">
+            <form action="index.html" method="post">
+                <h2>Review</h2>
+                <input class="star star-5" id="star-5" type="radio" name="star" value="5" />
+                <label class="starlabel" for="star-5">&#9733;</label>
+                <input class="star star-4" id="star-4" type="radio" name="star" value="4" />
+                <label class="starlabel" for="star-4">&#9733;</label>
+                <input class="star star-3" id="star-3" type="radio" name="star" value="3" />
+                <label class="starlabel" for="star-3">&#9733;</label>
+                <input class="star star-2" id="star-2" type="radio" name="star" value="2" />
+                <label class="starlabel" for="star-2">&#9733;</label>
+                <input class="star star-1" id="star-1" type="radio" name="star" value="1" />
+                <label class="starlabel" for="star-1">&#9733;</label>
+                <input type="text" class="starinput" name="Comment" placeholder="Comment">
+                <input type="submit" class="starbutton" name="review" value="Submit">
+            </form>
+        </div>
+
+        
+        <article>
+            <h2>Description</h2>
+            <p>A short ride from Tagbilaran Airport, discover a paradise hideaway where luxurious seclusion meets exotic natural beauty. This verdant, beach-fringed island offers sophisticated pleasures on land and water - from genuine Filipino therapies in the spa to splashing, sailing, or diving in the jewel-like Mindanao Sea and Bohol's most pristine lagoon.</p>
+        </article>
+    </div>
+
+    <div id="booknow">
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Book Now</a>
+    </div>
+
+</body>
+
+</html>

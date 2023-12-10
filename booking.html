@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Contact</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image:url("https://thumbs.dreamstime.com/b/cozy-restaurant-tables-ready-dinner-39875776.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #bookbox {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #bookingpage {
+            text-align: left;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .binput, .binputbox {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .binputbox {
+            width: calc(100% - 22px);
+        }
+
+        .bsubmitbutton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .bsubmitbutton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div id="bookbox">
+    <form id="bookingpage" action="booking.php" method="post">
+        <center><h1>Booking & Contact</h1></center>
+        <input type="text" class="binput" name="name" placeholder="Name" required/>
+        <br>
+        <input type="text" class="binput" name="email" placeholder="Email" required/>
+        <br>
+        <input type="text" class="binput" name="phone" placeholder="Phone Number" required/>
+        <br>
+        <center><h2>Details</h2></center>
+        <p> Arrive :
+            <br><input type="date" class="binput" name="a_date" placeholder="Arrive" required/></p>
+
+        <p> Depart :
+            <br><input type="date" class="binput" name="d_date" placeholder="Arrive" required/></p>
+        <br>
+
+        <label>People : </label><select class="binputbox" name="people" required/>
+        <option value="blank"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        </select>
+
+        <br>
+        <label>Rooms : </label><select class="binputbox" name="room" required/>
+        <option value="blank"></option>
+        <option value="Single">Single</option>
+        <option value="Double">Double</option>
+        <option value="Deluxe">Deluxe</option>
+        <option value="Presidential">Presidential Suite</option>
+        <option value="Bungalow">Bungalow</option>
+        </select>
+        <br>
+        <br>
+        <input name="book" type="submit" class="bsubmitbutton" value="SUBMIT">
+    </form>
+</div>
+</body>
+</html>
